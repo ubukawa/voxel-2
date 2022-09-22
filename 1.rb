@@ -12,27 +12,13 @@ pipeline:
   - 
     filename: #{src_path}
     type: readers.las
-    spatialreference: "EPSG:3857" 
-  -
-    type: writers.las
-    filename: #{dst_path}
-EOS
-
-# Use the following if reprojection is needed.
-=begin
-pipeline = <<-EOS
-pipeline: 
-  - 
-    filename: #{src_path}
-    type: readers.las
-    spatialreference: "EPSG:3857" #modify it if it is not in webmercator.
+    spatialreference: "EPSG:32735"
   -
     type: filters.reprojection
-    out_srs: "EPSG:3857"
+    out_srs: "EPSG:3857" 
   -
     type: writers.las
     filename: #{dst_path}
 EOS
-=end
 
 print JSON.dump(YAML.load(pipeline))
