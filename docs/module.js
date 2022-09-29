@@ -31,6 +31,7 @@ const showMap = async (texts) => {
     container: 'map',
     hash: true,
     style: 'style.json',
+    minZoom: 15,
     maxZoom: 20,
     maxPitch: 85
   })
