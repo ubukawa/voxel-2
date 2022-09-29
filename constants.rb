@@ -1,6 +1,7 @@
 SKIP = true
 
 TMP_DIR = 'src'
+TL_DIR = 'tile'
 Z_ONE_METER = 19
 BASE = 2
 

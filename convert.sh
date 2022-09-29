@@ -1,0 +1,1 @@
+for f in tile/*.laz; do Z=19 BASENAME=`basename ${f} .laz` ruby 2.rb | pdal pipeline --stdin | Z=19 ruby 3.rb | tippecanoe --maximum-zoom=19 --minimum-zoom=19 --projection=EPSG:3857 --force --output mbtiles/`basename ${f} .laz`.mbtiles --no-tile-size-limit --no-feature-limit; done

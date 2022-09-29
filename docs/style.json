@@ -45,11 +45,11 @@
   "sources": {
     "voxel": {
       "type": "vector",
-      "attribution": "PointCloud from pierotofy/drone_dataset_brighton_beach",
-      "minzoom": 14,
-      "maxzoom": 19,
+      "attribution": "PointCloud from Steve V. Mother",
+      "minzoom": 15,
+      "maxzoom": 17,
       "tiles": [
-        "https://ubukawa.github.io/voxel-br/voxel/{z}/{x}/{y}.pbf"
+        "https://ubukawa.github.io/voxel-2/zxy-github/{z}/{x}/{y}.pbf"
       ]
     }
   }

@@ -1,11 +1,11 @@
-# for reprojection. (actually it is not needed)
+# for reprojection. 
 require './constants'
 require 'yaml'
 require 'json'
 
 basename = ENV['BASENAME']
 src_path = "#{TMP_DIR}/#{basename}.laz"
-dst_path = "#{TMP_DIR}/#{basename}-3857.las"
+dst_path = "#{TMP_DIR}/#{basename}-3857.laz"
 
 pipeline = <<-EOS
 pipeline: 
